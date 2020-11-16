@@ -237,7 +237,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 			float(tempSpr.GetHeight() - shrinkY), vec2(0.f, 0.f), false, GROUND, PLAYER | ENEMY);
 		tempPhsBody.SetColor(vec4(0.f, 1.f, 0.f, 0.3f));
 	}
-	//Setup static Platform 3
+	//Setup christian Platform 1
 	{
 		//Creates entity
 		auto entity = ECS::CreateEntity();
@@ -268,7 +268,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 			float(tempSpr.GetHeight() - shrinkY), vec2(0.f, 0.f), false, GROUND, PLAYER | ENEMY);
 		tempPhsBody.SetColor(vec4(0.f, 1.f, 0.f, 0.3f));
 	}
-	//Setup static Triangle hole left side
+	//Setup christian Triangle hole left side
 	{
 		//Creates entity
 		auto entity = ECS::CreateEntity();
@@ -300,7 +300,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 		tempPhsBody.SetColor(vec4(0.f, 1.f, 0.f, 0.3f));
 		tempPhsBody.SetRotationAngleDeg(-60.f);
 	}
-	//Setup static Triangle hole right side
+	//Setup christian Triangle hole right side
 	{
 		//Creates entity
 		auto entity = ECS::CreateEntity();
@@ -399,7 +399,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 		tempPhsBody.SetColor(vec4(0.f, 1.f, 0.f, 0.3f));
 		tempPhsBody.SetRotationAngleDeg(90.f);
 	}
-	//Setup static Wall 3
+	//Setup christian Wall 1
 	{
 		//Creates entity
 		auto entity = ECS::CreateEntity();
@@ -464,7 +464,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 
 		tempPhsBody.SetColor(vec4(1.f, 0.f, 1.f, 0.3f));
 	 } 
-	//Triangle
+	//christian Triangle
 	{
 		auto entity = ECS::CreateEntity();
 		//Add components
@@ -535,7 +535,7 @@ void PhysicsPlayground::InitScene(float windowWidth, float windowHeight)
 		tempPhsBody = PhysicsBody(entity, tempBody, float(tempSpr.GetWidth() - shrinkX), float(tempSpr.GetHeight() - shrinkY), vec2(0.f, 0.f), true, TRIGGER, OBJECTS);
 		tempPhsBody.SetColor(vec4(1.f, 0.f, 0.f, 0.3f));
 	}
-	//Setup trigger 2
+	//Setup christian trigger 1
 	{
 		//Creates entity
 		auto entity = ECS::CreateEntity();
