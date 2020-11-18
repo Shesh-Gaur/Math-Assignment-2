@@ -20,7 +20,8 @@ public:
 protected:
 	PhysicsPlaygroundListener listener;
 
-	int puzzleWall1;
-	int puzzleWall2;
+	//int puzzleWall1;
+	//int puzzleWall2;
 	int puzzleWall3;
+	int scalingPuzzleBridge;
 };
