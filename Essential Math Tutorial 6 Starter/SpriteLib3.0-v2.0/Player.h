@@ -9,6 +9,7 @@ enum AnimEnums
 {
 	IDLELEFT,
 	IDLERIGHT,
+	IDLE,
 	
 	//Only in Top down
 #ifdef TOPDOWN
@@ -38,7 +39,6 @@ enum AnimEnums
 enum AnimTypes
 {
 #ifdef TOPDOWN
-	IDLE = 0,
 	WALK = 4,
 	ATTACK = 8
 #endif

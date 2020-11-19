@@ -39,7 +39,7 @@ void Player::InitPlayer(std::string& fileName, std::string& animationJSON, int w
 	//Idle Left
 	m_animController->AddAnimation(animations["IdleLeft"].get<Animation>());
 	//Idle Right
-	m_animController->AddAnimation(animations["IdleRight"].get<Animation>());
+	m_animController->AddAnimation(animations["Idle"].get<Animation>());
 #ifdef TOPDOWN
 	//Idle Up
 	m_animController->AddAnimation(animations["IdleUp"].get<Animation>());
