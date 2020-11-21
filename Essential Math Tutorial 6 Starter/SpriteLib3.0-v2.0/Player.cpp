@@ -85,7 +85,7 @@ void Player::Update()
 	{
 		MovementUpdate();
 	}
-
+		
 	AnimationUpdate();
 }
 
@@ -95,13 +95,7 @@ void Player::MovementUpdate()
 
 	if (m_hasPhysics)
 	{
-		float speed = 10.f;
-		vec3 vel = vec3(0.f, 0.f, 0.f);
 
-		if (Input::GetKey(Key::Shift))
-		{
-			speed *= 7.f;
-		}
 
 #ifdef TOPDOWN
 		if (Input::GetKey(Key::W))
@@ -120,23 +114,21 @@ void Player::MovementUpdate()
 
 		if (Input::GetKey(Key::A))
 		{
-			vel = vel + vec3(-1.f, 0.f, 0.f);
+			//vel = vel + vec3(-1.f, 0.f, 0.f);
 			m_facing = LEFT;
 			m_moving = true;
+			
 		}
 		if (Input::GetKey(Key::D))
 		{
-			vel = vel + vec3(1.f, 0.f, 0.f);
+			//vel = vel + vec3(1.f, 0.f, 0.f);
 			m_facing = RIGHT;
 			m_moving = true;
 		}
 
-		m_physBody->SetVelocity(vel * speed);
+		//m_physBody->SetVelocity(vel * speed);
 	}
-	else
-	{
-		//Regular Movement
-		float speed = 15.f;
+
 
 #ifdef TOPDOWN
 		if (Input::GetKey(Key::W))
@@ -155,17 +147,17 @@ void Player::MovementUpdate()
 
 		if (Input::GetKey(Key::A))
 		{
-			m_transform->SetPositionX(m_transform->GetPositionX() - (speed * Timer::deltaTime));
+			//m_transform->SetPositionX(m_transform->GetPositionX() - (speed * Timer::deltaTime));
 			m_facing = LEFT;
 			m_moving = true;
 		}
 		if (Input::GetKey(Key::D))
 		{
-			m_transform->SetPositionX(m_transform->GetPositionX() + (speed * Timer::deltaTime));
+			//m_transform->SetPositionX(m_transform->GetPositionX() + (speed * Timer::deltaTime));
 			m_facing = RIGHT;
 			m_moving = true;
 		}
-	}
+	
 
 	if (Input::GetKeyDown(Key::Space))
 	{
@@ -173,7 +165,7 @@ void Player::MovementUpdate()
 
 		if (m_hasPhysics)
 		{
-			m_physBody->SetVelocity(vec3());
+			//m_physBody->SetVelocity(vec3());
 		}
 
 		m_attacking = true;
@@ -184,7 +176,7 @@ void Player::MovementUpdate()
 void Player::AnimationUpdate()
 {
 	int activeAnimation = 0;
-
+	
 	if (m_moving)
 	{
 		//Puts it into the WALK category

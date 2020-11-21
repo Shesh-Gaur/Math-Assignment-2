@@ -24,4 +24,6 @@ protected:
 	int puzzleWall2;
 	int puzzleWall3;
 	int scaleBox1;
+	int scalePenta1;
+	int cover;
 };
