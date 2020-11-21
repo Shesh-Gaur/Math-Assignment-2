@@ -187,7 +187,11 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TranslateTrigger.h">
+<<<<<<< Updated upstream
       <Filter>Source Files</Filter>
+=======
+      <Filter>Header Files</Filter>
+>>>>>>> Stashed changes
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
